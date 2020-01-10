@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nón</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+    <!-- <script src="script/product_script.js"></script> -->
+</head>
+<body onload="firstLoad()">
+    <div id="blurBack" onclick="showLeftNav();">
+    </div>
+    <div class="nav-header" id="nav" onmouseover="hideInfo()"><!--Header NavBar-->
+        <div class="logo left"><!--LOGO-->
+            <a href="demo.html"><img src="img/logo.png" style="width: 95%;"/></a>
+        </div>
+        <div class="menu left" onmouseover="showMenu()" ><!--MENU-->
+            <ul class="navList ">
+                <li class="navli floatL"><a class="cool-link" href="#">t-shirt</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">hoodie</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">sweater</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">jean</a></li>
+                <li class="navli floatL"><a class="cool-link" href="product.html">hat</a></li>
+            </ul>
+        </div>
+        <!-- <div id="bigmenu" ><!- -Big Menu--><!-- gap bug khi slideshow fade- ->
+            <ul class="biglist">
+                <li class=" ">T-SHIRT1</li>
+                <li class=" ">T-SHIRT2</li>
+                <li class=" ">T-SHIRT3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">HOODIE1</li>
+                <li class=" ">HOODIE2</li>
+                <li class=" ">HOODIE3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">SWEATER1</li>
+                <li class=" ">SWEATER2</li>
+                <li class=" ">SWEATER3</li>
+            </ul>
+        </div> -->
+        <div class="search left"><!--Search Tool-->
+            <input type="text" placeholder="Nhập từ khóa cần tìm"/>
+            <i class="fa fa-search"></i> <b>Tìm Kiếm</b> 
+
+        </div>
+    </div>
+    <div class="container" onmouseover="hideMenu(),hideInfo()">
+        <div class="mini-slider picture"><!--Slider-->
+            <img class="mySlides fade" src="img/minislider1.jpg"/>
+            <img class="mySlides fade" src="img/minislider2.jpg"/>
+            <img class="mySlides fade" src="img/minislider3.jpg"/>
+        </div>
+    </div>
+    <div class="mini-menu">
+       
+        <div class="container">
+            <span class="title">NÓN</span>
+            <button class="leftList" onclick="myFunction()">
+                MÀU SẮC
+                <i class="fas fa-angle-down"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content show">
+                    <a href="#">Đen</a>
+                    <a href="#">Trắng</a>
+                    <a href="#">Xám</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+    
+    <script>
+         
+    </script>
+
+
+
+
+
+
+
+    <div class="container" onmouseover="hideMenu()" > <!--          PRODUCT          -->
+      
+            <div class="" id="showNav" onclick="showLeftNav();"></div>  <!--  LeftNav  --> 
+                <div id="left-nav" class="show">
+                    <a href="demo.html">
+                        <img src="img/logo.png" style="width: 100%;">
+                    </a>
+                   
+                    <h3>Giá</h3>
+                    <div class="sliderange">
+                        <input oninput="showPrice()" type="range" min="0" max="500" value="50" id="myRange" class="price">
+                        <p id="value">500</p>
+                
+                    </div>
+                    <h3>Màu sắc</h3>
+                    <div class="colorpicker">
+                        <input type="checkbox" class="colorcb"  id="red"><b>Red</b>
+                        <input type="checkbox" class="colorcb"  id="black"><b>Black</b>
+                        <input type="checkbox" class="colorcb" id="white"><b>White</b>
+                    </div>
+                    <div class="" id="closeNav" onclick="showLeftNav();"></div>   
+                </div>
+        
+     
+        
+        <ul style="list-style: none;    padding: 0px;">
+            <li class="item" onmouseover="showpostion(event,0)">
+                <div>
+                    <div class="prod">
+                        <a href="product_detail.html">
+                            <div class="prodimg image">
+                                <img class="infoImg" src="img/prod/baseball-cap/nk173-120-1.jpg" >
+                                <img src="img/prod/baseball-cap/nk173-120-2.jpg" class="fade2 imgBack">
+                            </div>
+                        </a>
+                        <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item"  onmouseover="showpostion(event,1)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk176-1.jpg">
+                        <img src="img/prod/baseball-cap/nk176-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,2)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk178-1.jpg">
+                        <img src="img/prod/baseball-cap/nk178-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,3)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk183-1.jpg">
+                        <img src="img/prod/baseball-cap/nk183-2.jpg" class="fade2 imgBack">
+                        
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,4)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk184-1.jpg">
+                        <img src="img/prod/baseball-cap/nk184-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,5)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk186-1.jpg">
+                        <img src="img/prod/baseball-cap/nk186-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,6)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk187-1.jpg">
+                        <img src="img/prod/baseball-cap/nk187-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,7)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk165-1.jpg">
+                        <img src="img/prod/baseball-cap/nk165-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,8)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk166-1.jpg">
+                        <img src="img/prod/baseball-cap/nk166-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,9)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk167-1.jpg">
+                        <img src="img/prod/baseball-cap/nk167-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,10)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk168-1.jpg">
+                        <img src="img/prod/baseball-cap/nk168-2.jpg" class="fade2 imgBack">
+                        
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            <li class="item" onmouseover="showpostion(event,11)">
+                <div class="prod">
+                    <div class="prodimg image">
+                        <img class="infoImg" src="img/prod/baseball-cap/nk169-1.jpg">
+                        <img src="img/prod/baseball-cap/nk169-2.jpg" class="fade2 imgBack">
+                    </div>
+                    <div class="prodname">
+                            <h5><a href="#" title="Stussy Snapback In Black">Stussy Snapback In Black</a></h5>
+                            <p class="code">Mã sản phẩm: SB444</p>
+                            <p class="sprice">Giá: 130.000 vnđ</p>                       
+                    </div>
+                </div>
+            </li>
+            
+                <div id="floatdiv" >
+                    <img id="floatdiv-img" src="" alt="">
+                    <h2>Xuất xứ</h2>
+                    <p>Việt Nam</p>
+                    <h2>Chất liệu</h2>
+                    <p>Canva</p>
+                    <h2>Đánh giá</h2>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <a href="pay.html"><button  id="floatbtn">Đặt Hàng</button></a>
+                </div>
+            
+        </ul>  
+        
+        <div class="pageNumber clear">
+                <a>1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a>5</a>
+                <a>»</a>
+                
+        
+        </div>
+    </div>
+    <script src="script/product_script.js"></script>
+    <script>
+    
+    
+        
+    </script>
+
+
+
+
+
+
+
+
+
+    <div class="footer clear" onmouseover="hideInfo()"><!--       Footer       -->
+    	<div class="footer-content">
+       		<h3>PARADEOS</h3>
+        	<ul class="list">
+            	<li>Giới thiệu</li>
+                <li>Liên hệ</li>
+                <li>Tuyển dụng</li>
+                <li>Cửa hàng</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>HỖ TRỢ KHÁCH HÀNG</h3>
+        	<ul class="list">
+            	<li>Hướng dẫn mua hàng</li>
+                <li>Hướng dẫn đổi hàng</li>
+                <li>Câu hỏi thường gặp?</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>DỊCH VỤ</h3>
+        	<ul class="list">
+            	<li>Vận chuyển</li>
+                <li>Thẻ thành viên</li>
+                <li>Chính sách bảo hành</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>THÔNG TIN</h3>
+        	<ul class="list">
+            	<li>Discovery</li>
+                <li>Tin tức</li>
+                <li>Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="social">
+       		<p>MADE BY: Lê Hồng Phúc<br />
+            Địa chỉ: 304/19 Bùi Đình Túy, P12, Q.BT, TP.HCM<br />
+            lehongphuc7394@gmail.com     -     ĐT: 0921.805.325 <br />
+            CMND: Số 02555xxxx - Ngày cấp: 11/11/2011<br />
+            </p>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

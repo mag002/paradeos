@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .show{
+            visibility: hidden;
+  	opacity:0;
+  	transition: visibility 0s, opacity 0.5s linear;
+        }
+    #left-nav{
+        padding:20px 10px;
+        background-color: white;
+        position: fixed;
+        top:230px;
+        left:0px;
+        width:250px;
+        height: 250px;
+        box-shadow: 5px 5px   lightgrey;
+        z-index: 999;
+    }
+    .sliderange{
+        width:100%;
+    }
+    .price{
+        margin:0px;
+        margin-left:25px;
+        -webkit-appearance: none;
+        width:75%;
+        height: 8px;
+        border-radius: 5px;
+        background-color: lightgrey;
+        outline: none;
+        
+    }
+    #value{
+        margin-left:25px;
+        font-weight: bold;
+    }
+    #value::before{
+        content:'< '
+    }
+    #value::after{
+        content:'.000đ'
+    }
+    .price::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        width: 20px; /* Set a specific slider handle width */
+        height: 20px; /* Slider handle height */
+        background: black; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 25px;
+    }
+    #closeNav{
+        background-color: white;
+        width:35px;
+        height:35px;
+        border-radius: 25px;
+        text-align: center;
+        padding:10px 10px;
+        position: absolute;
+        right:-12.5px;
+        top:45%;
+        font-weight: bold;
+        font-size:15px;
+        font-family: sans-serif;
+    }
+    #showNav{
+        background-color: white;
+        width:35px;
+        height:35px;
+        border-radius: 25px;
+        text-align: center;
+        padding:10px 10px;
+        position: fixed;
+        left:-12.5px;
+        top:45%;
+        font-weight: bold;
+        font-size:15px;
+        font-family: sans-serif;
+    }
+    #showNav::before{
+        content:">>"
+    }
+    #closeNav::before{
+        content:"<<"
+        
+    }
+    .colorcb{
+        -webkit-appearance: none;
+        width: 1em;
+        height: 1em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #ddd;
+        outline: none;
+        cursor: pointer;
+    }
+    .colorcb:checked {
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="" id="showNav" onclick="showLeftNav();"></div>  <!--  LeftNav  --> 
+    <div id="left-nav" class="show">
+        <h3>Giá</h3>
+        <div class="sliderange">
+            <input oninput="showPrice()" type="range" min="0" max="500" value="50" id="myRange" class="price">
+            <p id="value">500</p>
+       
+        </div>
+        <h3>Màu sắc</h3>
+        <div class="colorpicker">
+            <input type="checkbox" class="colorcb"  id="red"><b>Red</b>
+            <input type="checkbox" class="colorcb"  id="black"><b>Black</b>
+            <input type="checkbox" class="colorcb" id="white"><b>White</b>
+        </div>
+        <div class="" id="closeNav" onclick="showLeftNav();">    
+        </div>
+
+    </div>
+    <script>
+        function showPrice(){
+        var priceslide=document.getElementById("myRange");
+        var value=document.getElementById("value");
+        
+        value.innerHTML=priceslide.value;
+        }
+        
+        function showLeftNav() {
+            var leftnav = document.getElementById("left-nav");
+            leftnav.classList.toggle("show");
+        }   
+    </script>
+</body>
+</html>

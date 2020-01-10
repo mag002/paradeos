@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nón</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+    <!-- <script src="script/product_script.js"></script> -->
+</head>
+<body onload="firstLoad()">
+    <div id="customer" class="rgba show">
+        <div class="customerInfo">
+            <i class="fa fa-times" aria-hidden="true" onclick="payClick()"></i>
+            <a href="demo.html"><img src="img/logo.png" style="width: 55%;"/></a>
+            <h2>Thông tin đặt hàng</h2>
+            <div class="floatL">Họ Tên</div>
+            <div class="floatR"><input type="text"></div>
+            <div class="clear floatL">Số Điện thoại</div>
+            <div class="floatR"><input type="text"></div>
+            <div class="clear floatL">Địa chỉ</div>
+            <div class="floatR"><input type="text"></div>
+            <div class="clear floatL">Mã khuyến mãi</div>
+            <div class="floatR"><input type="text"></div>
+            <button class="paybtn"><a href="demo.html">Đặt hàng</a></button>
+
+        </div>
+    
+    </div>
+    <div class="nav-header fixed" id="nav" onmouseover="hideInfo()"><!--Header NavBar-->
+        <div class="logo left"><!--LOGO-->
+            <a href="demo.html"><img src="img/logo.png" style="width: 95%;"/></a>
+        </div>
+        <div class="menu left" onmouseover="showMenu()" ><!--MENU-->
+            <ul class="navList ">
+                <li class="navli floatL"><a class="cool-link" href="#">t-shirt</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">hoodie</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">sweater</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">jean</a></li>
+                <li class="navli floatL"><a class="cool-link" href="product.html">hat</a></li>
+            </ul>
+        </div>
+        <!-- <div id="bigmenu" ><!- -Big Menu--><!-- gap bug khi slideshow fade- ->
+            <ul class="biglist">
+                <li class=" ">T-SHIRT1</li>
+                <li class=" ">T-SHIRT2</li>
+                <li class=" ">T-SHIRT3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">HOODIE1</li>
+                <li class=" ">HOODIE2</li>
+                <li class=" ">HOODIE3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">SWEATER1</li>
+                <li class=" ">SWEATER2</li>
+                <li class=" ">SWEATER3</li>
+            </ul>
+        </div> -->
+        <div class="search left"><!--Search Tool-->
+            <input type="text" placeholder="Nhập từ khóa cần tìm"/>
+            <i class="fa fa-search"></i> <b>Tìm Kiếm</b> 
+
+        </div>
+    </div>
+
+
+
+    <div class="container grey" onmouseover="hideMenu()" >
+        <div class="cart">
+            <div class="cartInfo">
+                <h1>Giỏ hàng</h1>
+                <hr>
+
+                <div class="selected">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <img src="img/prod/baseball-cap/nk173-120-1.jpg" alt="">
+                    <div class="priceAndInfo">
+                        <h2>100.000d</h2>
+                        <a href="#">
+                            <h3>Thrasher Cap In Black</h3>
+                        </a>
+                        <p>Mã sản phẩm: NK18 <br>
+                            Size: Chưa chọn size
+                        </p>
+                        <p class="floatL">Số lượng</p>
+                        <input class="floatL" type="number" value="1">
+                        
+                    </div>
+                </div>
+                <hr style="clear:both">
+                <span style="float:right;font-weight: bold;font-size:20px;">Tổng Tiền: 100.000đ</span>
+                
+            </div>
+            
+
+        </div>
+
+        <div class="payCart">
+            <div class="payCartInfo">
+                    <h1>Đơn hàng</h1>
+                    <hr>
+                    <div class="floatL">Tổng tiền</div>
+                    <div class="floatR"><b>100.000đ</b></div>
+                    <div class="clear">Giao Hàng</div>
+                    <select id="ship">
+                            <option value="nhanh">Chuyển phát nhanh</option>
+                            <option value="tietkiem">Chuyển phát tiết kiệm</option>
+                            <option value="free">*Chuyển phát miễn phí</option>
+                    </select>
+                    <hr>
+                    <div class="floatL">Tỉnh/Thành phố</div>
+                    <div class="floatR">
+                            <select id="city">
+                                    <option value="hcm">TP.HCM</option>
+                                    <option value="hn">Huế</option>
+                                    <option value="hue">Hà Nội</option>
+                            </select>
+                    </div>
+                    <div class="clear floatL">Quận/Huyện</div>
+                    <div class="floatR">
+                            <select id="district">
+                                    <option value="bt">Bình Thạnh</option>
+                                    <option value="1">Quận 1</option>
+                                    <option value="2">Quận 2</option>
+                            </select>
+                    </div>
+                    <button class="paybtn" onclick="payClick();">Đặt hàng</button>
+            </div>
+
+        </div>
+        <script>
+            function payClick(){
+            var cust=document.getElementById("customer");
+            cust.classList.toggle("show");
+            nav.classList.toggle("fixed");
+            }
+        </script>
+        <div class="guide">
+               <div class="guideInfo">
+                    <h1>Hướng dẫn</h1>
+                    <hr>
+                        - Quay về trang chủ để tiếp tục mua thêm các sản phẩm khác.<br>
+                        - Nhập lại&nbsp;số lượng sản phẩm trong ô bên dưới, để&nbsp;thay đổi số lượng cần đặt.<br>
+                        - Nhấn <b>X</b>&nbsp;để xóa sản phẩm khỏi danh sách đặt&nbsp;hàng.<br>
+                        - Chọn cách thức và khu vực giao hàng ở khung&nbsp;bên phải.<br>
+                        - Vui lòng&nbsp;kiểm tra lại giỏ hàng, trước khi&nbsp;nhấn <strong>Đặt Hàng</strong> để tiếp tục.<br><br>
+                        (*) <strong>Free shipping</strong>&nbsp;từ hóa đơn 500.000 VNĐ tại TP.HCM và 1.000.000 VNĐ tại các tỉnh khác.</div>
+                   
+               </div>
+        </div>
+
+
+
+
+
+
+    
+    <div class="footer clear" onmouseover="hideInfo()"><!--       Footer       -->
+    	<div class="footer-content">
+       		<h3>PARADEOS</h3>
+        	<ul class="list">
+            	<li>Giới thiệu</li>
+                <li>Liên hệ</li>
+                <li>Tuyển dụng</li>
+                <li>Cửa hàng</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>HỖ TRỢ KHÁCH HÀNG</h3>
+        	<ul class="list">
+            	<li>Hướng dẫn mua hàng</li>
+                <li>Hướng dẫn đổi hàng</li>
+                <li>Câu hỏi thường gặp?</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>DỊCH VỤ</h3>
+        	<ul class="list">
+            	<li>Vận chuyển</li>
+                <li>Thẻ thành viên</li>
+                <li>Chính sách bảo hành</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>THÔNG TIN</h3>
+        	<ul class="list">
+            	<li>Discovery</li>
+                <li>Tin tức</li>
+                <li>Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="social">
+       		<p>MADE BY: Lê Hồng Phúc<br />
+            Địa chỉ: 304/19 Bùi Đình Túy, P12, Q.BT, TP.HCM<br />
+            lehongphuc7394@gmail.com     -     ĐT: 0921.805.325 <br />
+            CMND: Số 02555xxxx - Ngày cấp: 11/11/2011<br />
+            </p>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

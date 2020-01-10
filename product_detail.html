@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>THRASHER CAP IN BLACK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+    <script src="script/product_script.js"></script>
+</head>
+<body onload="firstLoad()">
+    <div class="nav-header" id="nav"><!--Header NavBar-->
+        <div class="logo left"><!--LOGO-->
+            <a href="demo.html"><img src="img/logo.png" style="width: 95%;"/></a>
+        </div>
+        <div class="menu left" onmouseover="showMenu()" ><!--MENU-->
+            <ul class="navList ">
+                <li class="navli floatL"><a class="cool-link" href="#">t-shirt</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">hoodie</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">sweater</a></li>
+                <li class="navli floatL"><a class="cool-link" href="#">jean</a></li>
+                <li class="navli floatL"><a class="cool-link" href="product.html">hat</a></li>
+            </ul>
+        </div>
+        <!-- <div id="bigmenu"><!- -Big Menu--><!-- gap bug khi slideshow fade- ->
+            <ul class="biglist">
+                <li class=" ">T-SHIRT1</li>
+                <li class=" ">T-SHIRT2</li>
+                <li class=" ">T-SHIRT3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">HOODIE1</li>
+                <li class=" ">HOODIE2</li>
+                <li class=" ">HOODIE3</li>
+            </ul>
+            <ul class="biglist">
+                <li class=" ">SWEATER1</li>
+                <li class=" ">SWEATER2</li>
+                <li class=" ">SWEATER3</li>
+            </ul>
+        </div> -->
+        <div class="search left"><!--Search Tool-->
+            <input type="text" placeholder="Nhập từ khóa cần tìm"/>
+            <i class="fa fa-search"></i> <b>Tìm Kiếm</b> 
+        </div>
+    </div>
+    <div class="container"  onmouseout="hideMenu()">
+        <div class="product-detail">
+            <div class="breadcrumbs">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="demo.html">
+                            <i class="fa fa-home">
+                            </i> Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html" title="HAT">
+                            Hat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html" title="BaseballCap">
+                            Baseball Cap
+                        </a>
+                    </li>
+                    <li class="active">
+                        <span>Thrasher Cap In Black</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="proinfo">
+                <div class="prozoom">
+                    <div class="zoomright">
+                        <div class="zoomimg" >
+                            <img id="bigimg" src="img/prod/baseball-cap/nk173-120-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="zoomleft">
+                        <div  class="image">
+                            <img class="imglist" src="img/prod/baseball-cap/nk173-120-1.jpg" alt="non1" onclick="selectIMG(0)">
+                            <img class="imglist" src="img/prod/baseball-cap/nk173-120-2.jpg" alt="non2" onclick="selectIMG(1)">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+
+
+                <div class="propay">
+                        <div class="detail-pro">
+                            <h1 class="title_detail">Thrasher Cap In Black</h1>
+                            <p class="p-itmCode">
+                                Mã sản phẩm: <b>NK173</b>                
+                            </p>
+                            <div class="divPrice">
+                                Giá:
+                                <span>120.000 vnđ</span><!--<span class="guide">Miễn phí giao hàng toàn quốc</span>-->
+                            </div>
+                            <div class="itm-s-cart">
+                                <b>Size:</b> 
+                                <div>
+                                    <select class="sl_size" name="select_size" id="select_size">
+                                        <option value="">---Chọn size---</option>
+                                        <option value="Free Size">Free Size</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" id="text_size" value="no">
+                            </div>
+                            <div class="itm-s-cart" id="controls">
+                                <label class="quantity_box">Số lượng:</label>
+                                <span class="quantity-box">
+                                    <input value="1" class="quantity-input" style="width:45px;" name="txt_soluong" id="txt_soluong">
+                                </span>
+
+
+                               
+
+
+
+                                <span class="quantity-control">
+                                    <input type="button" class="quantity-controls quantity-plus" value="+" onclick="quantityClick(0)">
+                                    <input type="button" class="quantity-controls quantity-minus" value="-" onclick="quantityClick(1)">
+                                </span>
+
+
+                        
+                            </div>
+                            <div class="paybutton">
+                                <a href="pay.html" class="pay">Đặt hàng</a>
+                                <a href="" class="pay">Điện thoại đặt hàng<em> 0903078300</em></a>
+                            </div>
+
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <div class="footer clear"><!--       Footer       -->
+    	<div class="footer-content">
+       		<h3>PARADEOS</h3>
+        	<ul class="list">
+            	<li>Giới thiệu</li>
+                <li>Liên hệ</li>
+                <li>Tuyển dụng</li>
+                <li>Cửa hàng</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>HỖ TRỢ KHÁCH HÀNG</h3>
+        	<ul class="list">
+            	<li>Hướng dẫn mua hàng</li>
+                <li>Hướng dẫn đổi hàng</li>
+                <li>Câu hỏi thường gặp?</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>DỊCH VỤ</h3>
+        	<ul class="list">
+            	<li>Vận chuyển</li>
+                <li>Thẻ thành viên</li>
+                <li>Chính sách bảo hành</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+       		<h3>THÔNG TIN</h3>
+        	<ul class="list">
+            	<li>Discovery</li>
+                <li>Tin tức</li>
+                <li>Khuyến mãi</li>
+            </ul>
+        </div>
+        <div class="social">
+       		<p>MADE BY: Lê Hồng Phúc<br />
+            Địa chỉ: 304/19 Bùi Đình Túy, P12, Q.BT, TP.HCM<br />
+            lehongphuc7394@gmail.com     -     ĐT: 0921.805.325 <br />
+            CMND: Số 02555xxxx - Ngày cấp: 11/11/2011<br />
+            </p>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

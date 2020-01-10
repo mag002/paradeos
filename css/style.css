@@ -1,0 +1,182 @@
+@charset "utf-8";
+body{
+	margin:0px;
+}
+*{
+	box-sizing:border-box;
+}
+.fullmain{
+	padding-top:0px;
+}
+.floatL{
+	float:left;
+}
+.floatR{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.nav-header{
+	background-color:grey;
+	width:100%;
+	height:75px;
+	position:relative;
+	margin:0px;
+	
+}
+.slider{
+	background-color:#69F;
+	height:500px;
+
+}
+.top-product{
+
+	background-color:lightblue;
+}
+.center{
+	text-align:center;
+	padding:0px 20px;
+}
+.product{
+
+	width:25%;
+	height:400px;
+	background-color:red;
+	margin:0px;
+
+}
+.left{
+	display:inline-block;
+}
+.product-img{
+	height:80%;
+	width:80%;
+	border:2px dashed #d7d7d7;
+	background-color:white;
+	margin:10%;
+
+}
+.catalog{
+	height:800px;
+	background-color:lightgrey;
+	padding:15px 15px;
+}
+.left-catalog{
+	background-color:black;
+	height:100%;
+	width:50%;
+	padding-left:35px;
+}
+.left-product{
+	height:100%;
+	width:100%;
+	background-color:grey;
+}
+.right-catalog{
+	background-color:white;
+	height:100%;
+	width:50%;
+	padding:5px 35px;
+}
+.catalog-product{
+	margin-bottom:5px;
+	height:50%;
+	width:100%;
+	background-color:black;
+}
+.picture{
+	overflow:hidden;
+}
+.discovery{
+	background-color:grey;
+	height:300px;
+	padding: 100px 100px;
+
+}
+.footer{
+	
+    padding: 50px 20px;
+	background-color:black;
+	height:200px;
+	color:white;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	color: #999;
+    font-size: 12px;
+}
+.footer-content{
+	width: 16.66666667%;
+	float:left;
+}
+h3{
+	font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 20px;
+}
+.social{
+	float:right;
+	color: #999;
+    font-size: 12px;
+}
+#ads
+{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+	padding:100px 250px;
+	display:block;
+}
+#ads a{
+	text-decoration:none;
+	color:black;
+}
+
+.ads-content{
+	position:relative;
+	background-color:white;
+	height:100%;
+	width:100%;
+	text-align:center;
+	line-height:420px;
+}
+.logo{
+	height: 100%;
+    width: 187.5px;
+	margin-left:20px;
+}
+.menu{
+	
+}
+.search{
+	position:absolute;
+	right: 20px;
+    top: 25px;
+}
+.navList{
+	list-style-type:none;
+	margin:0px;
+}
+.navli{
+	display: inline-block;
+    z-index: 20;
+    margin-right: 40px;
+    font-size: 18px;
+	font-family: 'UTM Swiss Condensed', Arial, sans-serif;
+}
+#bigmenu{
+	background: white;
+    width: 100%;
+    height: 250px;
+    display: none;
+    padding-left: 210.5px;
+}
+/* CSS Document */
+
